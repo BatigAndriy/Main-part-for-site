@@ -7,7 +7,7 @@
 ![YouTube Video Views](https://img.shields.io/youtube/views/dQw4w9WgXcQ?style=social)
 
 ## Short description of project:
-usefull part with watch for a site 
+usefull part with headphones for a site 
 
 ## Demo
 ![-](main.jpg)
