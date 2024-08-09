@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <section class="testimonial section container">
+        <div class="testimonial__container">
+            <div class="testimonial__wrapper">
+                <div class="testimonial__card">
+                    <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <span class="testimonial__description">
+                        They are the best headphones that one acquires,
+                        also they are always with the latest
+                        news and trends, with a very comfortable price
+                        and especially with the attention you receive,
+                        they are always attentive to your questions.
+                    </span>
+                    <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                    <h3 class="testimonial__date">March 27. 2021</h3>
+                    <div class="testimonial__perfil">
+                        <img src="testimonial1.jpg" alt="" class="testimonial__perfil-img">
+                        <div class="testimonial__perfil-data">
+                            <span class="testimonial__perfil-name">Lee Doe</span>
+                            <span class="testimonial__perfil-detail">Director of a company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial__card">
+                    <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <span class="testimonial__description">
+                        They are the best headphones that one acquires,
+                        also they are always with the latest
+                        news and trends, with a very comfortable price
+                        and especially with the attention you receive,
+                        they are always attentive to your questions.
+                    </span>
+                    <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                    <h3 class="testimonial__date">March 27. 2021</h3>
+                    <div class="testimonial__perfil">
+                        <img src="testimonial2.jpg" alt="" class="testimonial__perfil-img">
+                        <div class="testimonial__perfil-data">
+                            <span class="testimonial__perfil-name">Samantha Mey</span>
+                            <span class="testimonial__perfil-detail">Director of a company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial__card">
+                    <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <span class="testimonial__description">
+                        They are the best headphones that one acquires,
+                        also they are always with the latest
+                        news and trends, with a very comfortable price
+                        and especially with the attention you receive,
+                        they are always attentive to your questions.
+                    </span>
+                    <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                    <h3 class="testimonial__date">March 27. 2021</h3>
+                    <div class="testimonial__perfil">
+                        <img src="testimonial3.jpg" alt="" class="testimonial__perfil-img">
+                        <div class="testimonial__perfil-data">
+                            <span class="testimonial__perfil-name">Raul Zaman</span>
+                            <span class="testimonial__perfil-detail">Director of a company</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial__navigation">
+                <button class="testimonial__button" id="prevButton"><i class='bx bx-left-arrow-alt'></i></button>
+                <button class="testimonial__button" id="nextButton"><i class='bx bx-right-arrow-alt'></i></button>
+            </div>
+        </div>
+        <div class="testimonial__images">
+            <img src="testimonial.jpg" alt="" class="testimonial__img">
+            <div class="testimonial__square"></div>
+        </div>
+    </section>
+
+
+    <script>
+        const wrapper = document.querySelector('.testimonial__wrapper');
+        const cards = document.querySelectorAll('.testimonial__card');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        let currentIndex = 0;
+
+        function updateSlider() {
+            wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateSlider();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            updateSlider();
+        });
+    </script>
+</body>
+</html>
