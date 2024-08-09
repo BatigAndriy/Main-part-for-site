@@ -10,7 +10,7 @@
 usefull part with watch for a site 
 
 ## Demo
-![-](for_main_part.jpg)
+![-](main.jpg)
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
